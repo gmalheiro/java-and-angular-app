@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="form-box">
+      <form #f="ngForm" style="display: flex; align-items: center; justify-content: center; flex-direction: column;"  (ngSubmit)="onSubmit(f)" novalidate>
+          <label style="position: relative; right: 70px; font-weight: bold;" for="username">Username</label>
+          <input pInputText  class="p-inputtext-sm" name="firstName" ngModel required #firstName="ngModel" />
+          <label style="position: relative; right: 70px; margin-top: 5px; font-weight: bold;" for="username">Password</label>
+          <input pInputText  style="margin-bottom: 15px;" class="p-inputtext-sm" name="lastName" ngModel />
+          <p-button (onClick)="onSubmit(f)" label="Submit"/>
+      </form>
+    </div>
+  </div>
