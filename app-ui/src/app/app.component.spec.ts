@@ -30,6 +30,10 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
+<<<<<<< HEAD
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, app-ui');
+=======
+    expect(compiled.querySelector('.content span')?.textContent).toContain('app-ui app is running!');
+>>>>>>> d12c691c20911fdf6bc91792121a25266783a957
   });
 });
