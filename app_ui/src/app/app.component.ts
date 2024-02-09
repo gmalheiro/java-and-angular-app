@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import {LoginComponent} from './modules/login/components/login/login.component';
 
 
 @Component({
@@ -9,11 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
 
-  onSubmit(f: NgForm) {
-    console.log(f.value); 
-    console.log(f.valid); 
-  }
-
+  
   
 
 }

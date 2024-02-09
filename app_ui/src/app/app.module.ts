@@ -8,10 +8,13 @@ import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { StyleClassModule } from 'primeng/styleclass';
+import { LoginModule } from './modules/login/login.module';
+import { LoginComponent } from './modules/login/components/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,8 @@ import { StyleClassModule } from 'primeng/styleclass';
     FormsModule,
     InputTextModule,
     ButtonModule,
-    StyleClassModule
+    StyleClassModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
