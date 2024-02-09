@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'app_ui';
+
+  onSubmit(f: NgForm) {
+    console.log(f.value); 
+    console.log(f.valid); 
+  }
+
+  
+
 }
