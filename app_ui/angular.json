@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app-ui": {
+    "app_ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,8 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/app-ui",
-            "outputPath": "dist/app-ui",
+            "outputPath": "dist/app_ui",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -38,9 +37,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "./node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "./node_modules/primeng/resources/primeng.min.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -72,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "app-ui:build:production"
+              "buildTarget": "app_ui:build:production"
             },
             "development": {
-              "buildTarget": "app-ui:build:development"
+              "buildTarget": "app_ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "app-ui:build"
+            "buildTarget": "app_ui:build"
           }
         },
         "test": {
@@ -100,9 +97,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "./node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "./node_modules/primeng/resources/primeng.min.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
